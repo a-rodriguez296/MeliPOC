@@ -13,9 +13,9 @@ struct SearchItems: EndpointProtocol {
 
     func getURLComponents() -> URLComponents {
         var urlComponents = Constants.baseURLComponents
-        urlComponents.query = Endpoints.searchItems.url
+        urlComponents.path.append(Endpoints.searchItems.url)
         var baseItems = [URLQueryItem]()
-        baseItems.append(URLQueryItem(name: "q", value: keyword))
+        baseItems.append(contentsOf: [URLQueryItem(name: "q", value: keyword)])
         urlComponents.queryItems = baseItems
         return urlComponents
     }
