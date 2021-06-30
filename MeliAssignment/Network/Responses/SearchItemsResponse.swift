@@ -9,42 +9,42 @@ import Foundation
 
 struct SearchItemsResponse: Decodable {
     var pagingResponse: PagingResponse?
-//    var results: [SearchItemResponse]?
-//    var siteId: String?
+    var results: [SearchItemResponse]?
+    var siteId: String?
 
     enum CodingKeys: String, CodingKey {
         case pagingResponse = "paging"
-//        case siteId = "site_id"
-//        case results
+        case siteId = "site_id"
+        case results
     }
 }
 
 struct SearchItemResponse: Decodable {
     var id: String?
     var title: String?
-//    var seller: SearchItemSellerResponse?
-//    var price: Int?
-//    var thumbnail: String?
-//    var shipping: SearchItemSellerShippingResponse?
+    var seller: SearchItemSellerResponse?
+    var price: Double?
+    var thumbnail: String?
+    var shipping: SearchItemSellerShippingResponse?
+    var quantity: Int?
 
-//    enum CodingKeys: String, CodingKey {
-//        case id
-//        case title
-//        case seller
-//        case price
-//        case thumbnail = "permalink"
-//        case shipping
-//    }
+    enum CodingKeys: String, CodingKey {
+        case id
+        case title
+        case seller
+        case price
+        case thumbnail = "permalink"
+        case shipping
+        case quantity = "available_quantity"
+    }
 }
 
 struct SearchItemSellerResponse: Decodable {
-    var id: Int?
     var eShop: SearchItemSellerEShopResponse?
 
     enum CodingKeys: String, CodingKey {
         case eShop = "eshop"
     }
-
 }
 
 struct SearchItemSellerEShopResponse: Decodable {

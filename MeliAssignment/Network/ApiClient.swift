@@ -36,7 +36,6 @@ class ApiClient {
                 else {
                     if let data = data,
                        let response = response as? HTTPURLResponse {
-                        print(String(data: data, encoding: .utf8)!)
                         do {
                             let decodedResponse = try JSONDecoder().decode(U.self, from: data)
                             completionHandler(APIResult.success(response.statusCode, decodedResponse))
