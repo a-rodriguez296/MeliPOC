@@ -132,10 +132,10 @@
 			isa = PBXGroup;
 			children = (
 				5FA32F05268C0F920040A5D8 /* Contract */,
+				5FA32F0D268C120B0040A5D8 /* Interactor */,
+				5FA32F0F268C12160040A5D8 /* Presenter */,
 				5FA32F03268C0F7E0040A5D8 /* Router */,
 				5FA32EFC268C0CBB0040A5D8 /* View */,
-				5FA32F07268C0FFA0040A5D8 /* DisplayResultsInteractor.swift */,
-				5FA32F0A268C10300040A5D8 /* DisplayResultsPresenter.swift */,
 			);
 			path = Results;
 			sourceTree = "<group>";
@@ -171,6 +171,22 @@
 				5FA32EEA268C0BDE0040A5D8 /* DisplayResultsContract.swift */,
 			);
 			path = Contract;
+			sourceTree = "<group>";
+		};
+		5FA32F0D268C120B0040A5D8 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				5FA32F07268C0FFA0040A5D8 /* DisplayResultsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		5FA32F0F268C12160040A5D8 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5FA32F0A268C10300040A5D8 /* DisplayResultsPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		5FEA7D5B268C091200DDAC1D /* Main VC */ = {

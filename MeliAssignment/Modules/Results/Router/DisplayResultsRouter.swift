@@ -23,6 +23,7 @@ class DisplayResultsRouter: DisplayResultsWireframeLogic {
         let router = DisplayResultsRouter()
         router.viewController = viewController
         viewController.router = router
+        viewController.interactor = interactor
         return viewController
     }
 }

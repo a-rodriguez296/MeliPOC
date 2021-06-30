@@ -8,7 +8,7 @@
 import Foundation
 
 protocol DisplayResultsBusinessLogic: class {
-
+    func fetchResults(with keyword: String)
 }
 
 protocol DisplayResultsPresentationLogic: class {

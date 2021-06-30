@@ -14,5 +14,6 @@ class DisplayResultsViewController: UIViewController, DisplayResultsDisplayLogic
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        interactor?.fetchResults(with: "macbook pro")
     }
 }
