@@ -13,7 +13,7 @@ class DisplayResultsRouter: DisplayResultsWireframeLogic {
     weak var viewController: UIViewController?
 
     static func assembleModule() -> UIViewController {
-        let viewController = DisplayResultsViewController()
+        let viewController: DisplayResultsViewController = UIStoryboard(name: "DisplayResults", bundle: nil).instantiateViewController()
         let router = DisplayResultsRouter()
         router.viewController = viewController
         return viewController
