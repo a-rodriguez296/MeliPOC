@@ -68,13 +68,12 @@
 			children = (
 				5F5793E5268AB57B00D09776 /* AppDelegate.swift */,
 				5F5793E7268AB57B00D09776 /* SceneDelegate.swift */,
-				5F5793E9268AB57B00D09776 /* ViewController.swift */,
-				5F5793EB268AB57B00D09776 /* Main.storyboard */,
+				5FEA7D5E268C091E00DDAC1D /* Modules */,
+				5F5793FD268AB5DD00D09776 /* Network */,
+				5F579402268AB60100D09776 /* Other Resources */,
 				5F5793EE268AB57D00D09776 /* Assets.xcassets */,
 				5F5793F0268AB57D00D09776 /* LaunchScreen.storyboard */,
 				5F5793F3268AB57D00D09776 /* Info.plist */,
-				5F5793FD268AB5DD00D09776 /* Network */,
-				5F579402268AB60100D09776 /* Other Resources */,
 			);
 			path = MeliAssignment;
 			sourceTree = "<group>";
@@ -112,6 +111,23 @@
 				5F57940D268AB72300D09776 /* SearchItemsResponse.swift */,
 			);
 			path = Responses;
+			sourceTree = "<group>";
+		};
+		5FEA7D5B268C091200DDAC1D /* Main VC */ = {
+			isa = PBXGroup;
+			children = (
+				5F5793E9268AB57B00D09776 /* ViewController.swift */,
+				5F5793EB268AB57B00D09776 /* Main.storyboard */,
+			);
+			path = "Main VC";
+			sourceTree = "<group>";
+		};
+		5FEA7D5E268C091E00DDAC1D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				5FEA7D5B268C091200DDAC1D /* Main VC */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
