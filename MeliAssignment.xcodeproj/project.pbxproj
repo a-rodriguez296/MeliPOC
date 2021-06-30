@@ -23,6 +23,8 @@
 		5FA32EF1268C0C390040A5D8 /* DisplayResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA32EF0268C0C390040A5D8 /* DisplayResultsViewController.swift */; };
 		5FA32EF4268C0C4B0040A5D8 /* DisplayResults.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FA32EF3268C0C4B0040A5D8 /* DisplayResults.storyboard */; };
 		5FA32EFF268C0EA90040A5D8 /* Storyboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA32EFE268C0EA90040A5D8 /* Storyboard+Extension.swift */; };
+		5FA32F08268C0FFA0040A5D8 /* DisplayResultsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA32F07268C0FFA0040A5D8 /* DisplayResultsInteractor.swift */; };
+		5FA32F0B268C10300040A5D8 /* DisplayResultsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA32F0A268C10300040A5D8 /* DisplayResultsPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		5FA32EF0268C0C390040A5D8 /* DisplayResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayResultsViewController.swift; sourceTree = "<group>"; };
 		5FA32EF3268C0C4B0040A5D8 /* DisplayResults.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DisplayResults.storyboard; sourceTree = "<group>"; };
 		5FA32EFE268C0EA90040A5D8 /* Storyboard+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+Extension.swift"; sourceTree = "<group>"; };
+		5FA32F07268C0FFA0040A5D8 /* DisplayResultsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayResultsInteractor.swift; sourceTree = "<group>"; };
+		5FA32F0A268C10300040A5D8 /* DisplayResultsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayResultsPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +85,10 @@
 				5FEA7D5E268C091E00DDAC1D /* Modules */,
 				5F5793FD268AB5DD00D09776 /* Network */,
 				5F579402268AB60100D09776 /* Other Resources */,
+				5FA32F01268C0F690040A5D8 /* Extensions */,
 				5F5793EE268AB57D00D09776 /* Assets.xcassets */,
 				5F5793F0268AB57D00D09776 /* LaunchScreen.storyboard */,
 				5F5793F3268AB57D00D09776 /* Info.plist */,
-				5FA32EFE268C0EA90040A5D8 /* Storyboard+Extension.swift */,
 			);
 			path = MeliAssignment;
 			sourceTree = "<group>";
@@ -127,9 +131,11 @@
 		5FA32EFA268C0CB20040A5D8 /* Results */ = {
 			isa = PBXGroup;
 			children = (
-				5FA32EEA268C0BDE0040A5D8 /* DisplayResultsContract.swift */,
-				5FA32EED268C0C0C0040A5D8 /* DisplayResultsRouter.swift */,
+				5FA32F05268C0F920040A5D8 /* Contract */,
+				5FA32F03268C0F7E0040A5D8 /* Router */,
 				5FA32EFC268C0CBB0040A5D8 /* View */,
+				5FA32F07268C0FFA0040A5D8 /* DisplayResultsInteractor.swift */,
+				5FA32F0A268C10300040A5D8 /* DisplayResultsPresenter.swift */,
 			);
 			path = Results;
 			sourceTree = "<group>";
@@ -141,6 +147,30 @@
 				5FA32EF3268C0C4B0040A5D8 /* DisplayResults.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		5FA32F01268C0F690040A5D8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5FA32EFE268C0EA90040A5D8 /* Storyboard+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5FA32F03268C0F7E0040A5D8 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				5FA32EED268C0C0C0040A5D8 /* DisplayResultsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		5FA32F05268C0F920040A5D8 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				5FA32EEA268C0BDE0040A5D8 /* DisplayResultsContract.swift */,
+			);
+			path = Contract;
 			sourceTree = "<group>";
 		};
 		5FEA7D5B268C091200DDAC1D /* Main VC */ = {
@@ -244,6 +274,8 @@
 				5FA32EEB268C0BDE0040A5D8 /* DisplayResultsContract.swift in Sources */,
 				5FA32EEE268C0C0C0040A5D8 /* DisplayResultsRouter.swift in Sources */,
 				5F5793FB268AB5B500D09776 /* ApiClient.swift in Sources */,
+				5FA32F0B268C10300040A5D8 /* DisplayResultsPresenter.swift in Sources */,
+				5FA32F08268C0FFA0040A5D8 /* DisplayResultsInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,8 +14,15 @@ class DisplayResultsRouter: DisplayResultsWireframeLogic {
 
     static func assembleModule() -> UIViewController {
         let viewController: DisplayResultsViewController = UIStoryboard(name: "DisplayResults", bundle: nil).instantiateViewController()
+
+        let interactor = DisplayResultsInteractor()
+        let presenter = DisplayResultsPresenter()
+        interactor.presenter = presenter
+        presenter.viewController = viewController
+
         let router = DisplayResultsRouter()
         router.viewController = viewController
+        viewController.router = router
         return viewController
     }
 }

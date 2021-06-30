@@ -7,4 +7,16 @@
 
 import Foundation
 
+protocol DisplayResultsBusinessLogic: class {
+
+}
+
+protocol DisplayResultsPresentationLogic: class {
+
+}
+
+protocol DisplayResultsDisplayLogic: class {
+    
+}
+
 protocol DisplayResultsWireframeLogic: class {}
