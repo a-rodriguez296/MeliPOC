@@ -16,9 +16,9 @@ class ViewController: UIViewController {
 
     @IBAction func didPressContinue(_ sender: Any) {
         let displayResultsVC = DisplayResultsRouter.assembleModule()
-        displayResultsVC.modalPresentationStyle = .overFullScreen
-        present(displayResultsVC, animated: true, completion: nil)
+        let navBarVC = UINavigationController.init(rootViewController: displayResultsVC)
+        navBarVC.modalPresentationStyle = .overFullScreen
+        present(navBarVC, animated: true, completion: nil)
     }
-
 }
 
