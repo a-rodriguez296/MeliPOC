@@ -16,6 +16,7 @@ protocol DisplayResultsPresentationLogic: class {
 }
 
 protocol DisplayResultsDisplayLogic: class {
+    func displayResults(with array: [ResultViewModel])
     
 }
 

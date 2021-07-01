@@ -27,8 +27,7 @@ class DisplayResultsInteractor: DisplayResultsBusinessLogic {
                                          price: element.price ?? 0.0,
                                          thumbnail: element.thumbnail ?? "",
                                          shipping: element.shipping?.freeShipping ?? false,
-                                         quantity: element.quantity ?? 0)
-                    }
+                                         quantity: element.quantity ?? 0)}
                     self?.results = array
                     self?.presenter?.presentResults(with: array)
                 } else {

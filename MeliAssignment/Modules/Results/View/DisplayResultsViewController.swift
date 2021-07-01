@@ -16,4 +16,8 @@ class DisplayResultsViewController: UIViewController, DisplayResultsDisplayLogic
         super.viewDidLoad()
         interactor?.fetchResults(with: "macbook pro")
     }
+
+    func displayResults(with array: [ResultViewModel]) {
+        
+    }
 }

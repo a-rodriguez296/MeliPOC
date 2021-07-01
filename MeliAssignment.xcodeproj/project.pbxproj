@@ -26,6 +26,7 @@
 		5FA32F08268C0FFA0040A5D8 /* DisplayResultsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA32F07268C0FFA0040A5D8 /* DisplayResultsInteractor.swift */; };
 		5FA32F0B268C10300040A5D8 /* DisplayResultsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA32F0A268C10300040A5D8 /* DisplayResultsPresenter.swift */; };
 		5FA32F13268C14D20040A5D8 /* ResultDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA32F12268C14D20040A5D8 /* ResultDAO.swift */; };
+		5FA4459E268D52AA002E7A16 /* ResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA4459D268D52AA002E7A16 /* ResultViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		5FA32F07268C0FFA0040A5D8 /* DisplayResultsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayResultsInteractor.swift; sourceTree = "<group>"; };
 		5FA32F0A268C10300040A5D8 /* DisplayResultsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayResultsPresenter.swift; sourceTree = "<group>"; };
 		5FA32F12268C14D20040A5D8 /* ResultDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultDAO.swift; sourceTree = "<group>"; };
+		5FA4459D268D52AA002E7A16 /* ResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 				5FA32F0F268C12160040A5D8 /* Presenter */,
 				5FA32F03268C0F7E0040A5D8 /* Router */,
 				5FA32EFC268C0CBB0040A5D8 /* View */,
+				5FA445A1268D54B2002E7A16 /* ViewModel */,
 			);
 			path = Results;
 			sourceTree = "<group>";
@@ -198,6 +201,14 @@
 				5FA32F12268C14D20040A5D8 /* ResultDAO.swift */,
 			);
 			path = DAO;
+			sourceTree = "<group>";
+		};
+		5FA445A1268D54B2002E7A16 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5FA4459D268D52AA002E7A16 /* ResultViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		5FEA7D5B268C091200DDAC1D /* Main VC */ = {
@@ -300,6 +311,7 @@
 				5F5793E8268AB57B00D09776 /* SceneDelegate.swift in Sources */,
 				5F579405268AB62B00D09776 /* Endpoints.swift in Sources */,
 				5FA32EEB268C0BDE0040A5D8 /* DisplayResultsContract.swift in Sources */,
+				5FA4459E268D52AA002E7A16 /* ResultViewModel.swift in Sources */,
 				5FA32EEE268C0C0C0040A5D8 /* DisplayResultsRouter.swift in Sources */,
 				5F5793FB268AB5B500D09776 /* ApiClient.swift in Sources */,
 				5FA32F0B268C10300040A5D8 /* DisplayResultsPresenter.swift in Sources */,

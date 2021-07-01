@@ -33,7 +33,7 @@ struct SearchItemResponse: Decodable {
         case title
         case seller
         case price
-        case thumbnail = "permalink"
+        case thumbnail
         case shipping
         case quantity = "available_quantity"
     }
