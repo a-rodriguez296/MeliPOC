@@ -11,10 +11,15 @@ struct ResultViewModel {
     var id: String
     var title: String
     var price: Double
-    var thumbnail: String?
+    var stPrice: String {
+        get {
+            return "$\(price)"
+        }
+    }
+    var thumbnail: String
     var thumbnailURL: URL? {
         get {
-            return URL(string: thumbnail ?? "")
+            return URL(string: thumbnail)
         }
     }
 }

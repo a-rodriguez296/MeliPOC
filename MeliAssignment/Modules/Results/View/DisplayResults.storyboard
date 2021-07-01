@@ -16,20 +16,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hola" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I5A-g4-RDH">
-                                <rect key="frame" x="189.5" y="437.5" width="35" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nMd-cV-A2W">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="0AG-hW-xaR" id="Zfi-A9-KCA"/>
+                                    <outlet property="delegate" destination="0AG-hW-xaR" id="iDH-ak-v6c"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5h2-rk-DXz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="I5A-g4-RDH" firstAttribute="centerX" secondItem="sGv-LX-Psj" secondAttribute="centerX" id="1lV-aP-ZY8"/>
-                            <constraint firstItem="I5A-g4-RDH" firstAttribute="centerY" secondItem="sGv-LX-Psj" secondAttribute="centerY" id="Y5F-n4-ujb"/>
+                            <constraint firstItem="nMd-cV-A2W" firstAttribute="leading" secondItem="5h2-rk-DXz" secondAttribute="leading" id="ACd-0u-9fg"/>
+                            <constraint firstItem="5h2-rk-DXz" firstAttribute="trailing" secondItem="nMd-cV-A2W" secondAttribute="trailing" id="Sff-qA-WEu"/>
+                            <constraint firstItem="nMd-cV-A2W" firstAttribute="top" secondItem="5h2-rk-DXz" secondAttribute="top" id="hdY-4z-ZPn"/>
+                            <constraint firstItem="5h2-rk-DXz" firstAttribute="bottom" secondItem="nMd-cV-A2W" secondAttribute="bottom" id="mOO-3Q-Wth"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="nMd-cV-A2W" id="wnl-Sk-dkj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rrs-bB-Mi9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

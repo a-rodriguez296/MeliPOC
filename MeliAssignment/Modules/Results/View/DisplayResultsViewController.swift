@@ -11,10 +11,14 @@ class DisplayResultsViewController: UIViewController, DisplayResultsDisplayLogic
 
     var interactor: DisplayResultsBusinessLogic?
     weak var router: DisplayResultsWireframeLogic?
+    var results: [ResultViewModel]?
+
+    @IBOutlet weak var tableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         configureSearchController()
+        configureTableView()
     }
 
     func configureSearchController() {
@@ -25,8 +29,30 @@ class DisplayResultsViewController: UIViewController, DisplayResultsDisplayLogic
         navigationItem.searchController = search
     }
 
+    func configureTableView() {
+        tableView.register(ResultViewCell.self)
+        tableView.estimatedRowHeight = 75.0
+        tableView.rowHeight = UITableView.automaticDimension
+    }
+
     func displayResults(with array: [ResultViewModel]) {
-        
+        results = array
+        tableView.reloadData()
+    }
+}
+
+extension DisplayResultsViewController: UITableViewDelegate, UITableViewDataSource {
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return results?.count ?? 0
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell: ResultViewCell = tableView.dequeueReusableCell(forIndexPath: indexPath)
+        if let viewModel = results?[indexPath.row] {
+            cell.configureWith(viewModel: viewModel)
+        }
+        return cell
     }
 }
 
