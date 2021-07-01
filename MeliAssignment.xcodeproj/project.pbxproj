@@ -27,6 +27,8 @@
 		5FA32F0B268C10300040A5D8 /* DisplayResultsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA32F0A268C10300040A5D8 /* DisplayResultsPresenter.swift */; };
 		5FA32F13268C14D20040A5D8 /* ResultDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA32F12268C14D20040A5D8 /* ResultDAO.swift */; };
 		5FA4459E268D52AA002E7A16 /* ResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA4459D268D52AA002E7A16 /* ResultViewModel.swift */; };
+		5FA445A4268D5C7A002E7A16 /* TableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA445A3268D5C7A002E7A16 /* TableView+Extension.swift */; };
+		5FA445A7268D5CEC002E7A16 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA445A6268D5CEC002E7A16 /* UIView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		5FA32F0A268C10300040A5D8 /* DisplayResultsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayResultsPresenter.swift; sourceTree = "<group>"; };
 		5FA32F12268C14D20040A5D8 /* ResultDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultDAO.swift; sourceTree = "<group>"; };
 		5FA4459D268D52AA002E7A16 /* ResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewModel.swift; sourceTree = "<group>"; };
+		5FA445A3268D5C7A002E7A16 /* TableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableView+Extension.swift"; sourceTree = "<group>"; };
+		5FA445A6268D5CEC002E7A16 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +163,8 @@
 			isa = PBXGroup;
 			children = (
 				5FA32EFE268C0EA90040A5D8 /* Storyboard+Extension.swift */,
+				5FA445A3268D5C7A002E7A16 /* TableView+Extension.swift */,
+				5FA445A6268D5CEC002E7A16 /* UIView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -312,10 +318,12 @@
 				5F579405268AB62B00D09776 /* Endpoints.swift in Sources */,
 				5FA32EEB268C0BDE0040A5D8 /* DisplayResultsContract.swift in Sources */,
 				5FA4459E268D52AA002E7A16 /* ResultViewModel.swift in Sources */,
+				5FA445A7268D5CEC002E7A16 /* UIView+Extension.swift in Sources */,
 				5FA32EEE268C0C0C0040A5D8 /* DisplayResultsRouter.swift in Sources */,
 				5F5793FB268AB5B500D09776 /* ApiClient.swift in Sources */,
 				5FA32F0B268C10300040A5D8 /* DisplayResultsPresenter.swift in Sources */,
 				5FA32F08268C0FFA0040A5D8 /* DisplayResultsInteractor.swift in Sources */,
+				5FA445A4268D5C7A002E7A16 /* TableView+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
