@@ -12,7 +12,7 @@ protocol DisplayResultsBusinessLogic: class {
 }
 
 protocol DisplayResultsPresentationLogic: class {
-
+    func presentResults(with array: [ResultDAO])
 }
 
 protocol DisplayResultsDisplayLogic: class {

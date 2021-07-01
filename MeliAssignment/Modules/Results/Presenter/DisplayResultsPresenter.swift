@@ -11,4 +11,8 @@ class DisplayResultsPresenter: DisplayResultsPresentationLogic {
 
     weak var viewController: DisplayResultsDisplayLogic?
 
+    func presentResults(with array: [ResultDAO]) {
+        
+    }
+
 }

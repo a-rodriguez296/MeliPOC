@@ -25,6 +25,7 @@
 		5FA32EFF268C0EA90040A5D8 /* Storyboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA32EFE268C0EA90040A5D8 /* Storyboard+Extension.swift */; };
 		5FA32F08268C0FFA0040A5D8 /* DisplayResultsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA32F07268C0FFA0040A5D8 /* DisplayResultsInteractor.swift */; };
 		5FA32F0B268C10300040A5D8 /* DisplayResultsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA32F0A268C10300040A5D8 /* DisplayResultsPresenter.swift */; };
+		5FA32F13268C14D20040A5D8 /* ResultDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA32F12268C14D20040A5D8 /* ResultDAO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		5FA32EFE268C0EA90040A5D8 /* Storyboard+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+Extension.swift"; sourceTree = "<group>"; };
 		5FA32F07268C0FFA0040A5D8 /* DisplayResultsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayResultsInteractor.swift; sourceTree = "<group>"; };
 		5FA32F0A268C10300040A5D8 /* DisplayResultsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayResultsPresenter.swift; sourceTree = "<group>"; };
+		5FA32F12268C14D20040A5D8 /* ResultDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultDAO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 		5FA32EFA268C0CB20040A5D8 /* Results */ = {
 			isa = PBXGroup;
 			children = (
+				5FA4459B268D5286002E7A16 /* DAO */,
 				5FA32F05268C0F920040A5D8 /* Contract */,
 				5FA32F0D268C120B0040A5D8 /* Interactor */,
 				5FA32F0F268C12160040A5D8 /* Presenter */,
@@ -187,6 +190,14 @@
 				5FA32F0A268C10300040A5D8 /* DisplayResultsPresenter.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5FA4459B268D5286002E7A16 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				5FA32F12268C14D20040A5D8 /* ResultDAO.swift */,
+			);
+			path = DAO;
 			sourceTree = "<group>";
 		};
 		5FEA7D5B268C091200DDAC1D /* Main VC */ = {
@@ -281,6 +292,7 @@
 				5F579400268AB5F300D09776 /* Constants.swift in Sources */,
 				5F579408268AB68500D09776 /* Endpoints+SearchItems.swift in Sources */,
 				5FA32EFF268C0EA90040A5D8 /* Storyboard+Extension.swift in Sources */,
+				5FA32F13268C14D20040A5D8 /* ResultDAO.swift in Sources */,
 				5F5793EA268AB57B00D09776 /* ViewController.swift in Sources */,
 				5F57940E268AB72300D09776 /* SearchItemsResponse.swift in Sources */,
 				5FA32EF1268C0C390040A5D8 /* DisplayResultsViewController.swift in Sources */,
