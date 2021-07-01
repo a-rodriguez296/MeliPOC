@@ -14,15 +14,14 @@ class DisplayResultsViewController: UIViewController, DisplayResultsDisplayLogic
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        interactor?.fetchResults(with: "macbook pro")
         configureSearchController()
     }
 
     func configureSearchController() {
         let search = UISearchController(searchResultsController: nil)
-        search.searchResultsUpdater = self
         search.obscuresBackgroundDuringPresentation = false
         search.searchBar.placeholder = "Ingresa tu búsqueda"
+        search.searchBar.delegate = self
         navigationItem.searchController = search
     }
 
@@ -31,10 +30,10 @@ class DisplayResultsViewController: UIViewController, DisplayResultsDisplayLogic
     }
 }
 
-extension DisplayResultsViewController: UISearchResultsUpdating {
+extension DisplayResultsViewController: UISearchBarDelegate {
 
-    func updateSearchResults(for searchController: UISearchController) {
-        guard let text = searchController.searchBar.text else { return }
-            print(text)
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        guard let text = searchBar.text else { return }
+        interactor?.fetchResults(with: text)
     }
 }

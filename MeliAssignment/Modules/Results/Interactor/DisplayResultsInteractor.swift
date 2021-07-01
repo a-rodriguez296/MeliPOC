@@ -12,9 +12,18 @@ class DisplayResultsInteractor: DisplayResultsBusinessLogic {
     var presenter: DisplayResultsPresentationLogic?
     var selectedItem: ResultDAO?
     var results: [ResultDAO]?
+    var timer: Timer?
+    var countdown = 1.5
+
+    func initializeTimmer() {
+        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(fireTimer), userInfo: nil, repeats: true)
+    }
+
+    @objc func fireTimer() {
+        countdown -= 0.1
+    }
 
     func fetchResults(with keyword: String) {
-
         let request = SearchItems(keyword: keyword)
         ApiClient.shared.execute(request: request) {[weak self] (apiResult: APIResult<SearchItemsResponse>) in
             switch apiResult {
@@ -42,5 +51,4 @@ class DisplayResultsInteractor: DisplayResultsBusinessLogic {
             }
         }
     }
-
 }
