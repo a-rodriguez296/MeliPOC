@@ -30,14 +30,12 @@ class DisplayResultsInteractor: DisplayResultsBusinessLogic, DisplayResultsDataS
                     self?.results = array
                     self?.presenter?.presentResults(with: array)
                 } else {
-                    // error case
+                    self?.presenter?.presentError()
                 }
             case .empty:
-                // error case
-                break
+                self?.presenter?.presentError()
             case .failure(_):
-                // error case
-                break
+                self?.presenter?.presentError()
             }
         }
     }

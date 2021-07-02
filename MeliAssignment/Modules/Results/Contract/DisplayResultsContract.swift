@@ -14,10 +14,12 @@ protocol DisplayResultsBusinessLogic: class {
 
 protocol DisplayResultsPresentationLogic: class {
     func presentResults(with array: [ResultDAO])
+    func presentError()
 }
 
 protocol DisplayResultsDisplayLogic: class {
     func displayResults(with array: [ResultViewModel])
+    func displayError(with message: String)
 }
 
 protocol DisplayResultsDataStore {

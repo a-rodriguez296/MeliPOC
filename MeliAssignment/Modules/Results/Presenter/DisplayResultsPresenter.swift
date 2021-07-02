@@ -20,4 +20,8 @@ class DisplayResultsPresenter: DisplayResultsPresentationLogic {
         viewController?.displayResults(with: viewModelArray)
     }
 
+    func presentError() {
+        let message = "Estamos teniendo inconvenientes en este momento. Vuelve a intentar en un rato por favor."
+        viewController?.displayError(with: message)
+    }
 }
