@@ -12,16 +12,6 @@ class DisplayResultsInteractor: DisplayResultsBusinessLogic, DisplayResultsDataS
     var presenter: DisplayResultsPresentationLogic?
     var selectedResult: ResultDAO?
     var results: [ResultDAO]?
-    var timer: Timer?
-    var countdown = 1.5
-
-    func initializeTimmer() {
-        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(fireTimer), userInfo: nil, repeats: true)
-    }
-
-    @objc func fireTimer() {
-        countdown -= 0.1
-    }
 
     func fetchResults(with keyword: String) {
         let request = SearchItems(keyword: keyword)
@@ -32,7 +22,7 @@ class DisplayResultsInteractor: DisplayResultsBusinessLogic, DisplayResultsDataS
                     let array = results.map { element -> ResultDAO in
                         return ResultDAO(id: element.id ?? "",
                                          title: element.title ?? "",
-                                         seller: element.seller?.eShop?.nickName ?? "",
+                                         seller: element.seller?.eShop?.nickName ?? "Oculto",
                                          price: element.price ?? 0.0,
                                          thumbnail: element.thumbnail ?? "",
                                          shipping: element.shipping?.freeShipping ?? false,

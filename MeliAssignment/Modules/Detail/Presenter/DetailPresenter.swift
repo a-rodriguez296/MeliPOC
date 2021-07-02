@@ -9,7 +9,16 @@ import Foundation
 
 class DetailPresenter: DetailPresentationLogic {
 
+    weak var viewController: DetailDisplayLogic?
+
     func presentSelectedItem(item: ResultDAO) {
-        print("hola")
+        let viewModel = DetailViewModel(id: item.id,
+                                        title: item.title,
+                                        seller: item.seller,
+                                        price: item.price,
+                                        thumbnail: item.thumbnail,
+                                        shipping: item.shipping,
+                                        quantity: item.quantity)
+        viewController?.displaySelectedItem(item: viewModel)
     }
 }

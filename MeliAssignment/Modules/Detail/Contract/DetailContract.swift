@@ -16,4 +16,8 @@ protocol DetailPresentationLogic: class {
     func presentSelectedItem(item: ResultDAO)
 }
 
+protocol DetailDisplayLogic: class {
+    func displaySelectedItem(item: DetailViewModel)
+}
+
 protocol DetialWireFrameLogic: class {}

@@ -18,6 +18,7 @@ class DetailRouter: DetialWireFrameLogic {
         viewController.interactor = interactor
 
         let presenter = DetailPresenter()
+        presenter.viewController = viewController
         interactor.presenter = presenter
 
         let router = DetailRouter()
