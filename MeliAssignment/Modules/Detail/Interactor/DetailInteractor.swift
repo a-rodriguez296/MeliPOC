@@ -16,4 +16,10 @@ class DetailInteractor: DetailBusinessLogic {
             presenter?.presentSelectedItem(item: selectedItem)
         }
     }
+
+    func fetchImageData(with url: URL, completionHandler: @escaping (Data) -> Void) {
+        ApiClient.shared.donwloadAsset(with: url) { data in
+            completionHandler(data)
+        }
+    }
 }

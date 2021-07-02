@@ -10,6 +10,7 @@ import Foundation
 protocol DetailBusinessLogic: class {
     var selectedItem: ResultDAO? { get set }
     func getSelectedItem()
+    func fetchImageData(with url: URL, completionHandler: @escaping (Data) -> Void)
 }
 
 protocol DetailPresentationLogic: class {

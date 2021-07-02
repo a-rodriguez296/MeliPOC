@@ -24,5 +24,15 @@ struct DetailViewModel {
         }
     }
     var shipping: Bool
+    var stShipping: String {
+        get {
+            return shipping ? "Envío gratuito": "El costo no incluye el envío"
+        }
+    }
     var quantity: Int
+    var stQuantity: String {
+        get {
+            return "\(quantity)"
+        }
+    }
 }

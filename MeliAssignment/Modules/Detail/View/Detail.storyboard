@@ -15,13 +15,135 @@
                     <view key="view" contentMode="scaleToFill" id="AWE-uA-sn3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7g8-5g-0z3">
+                                <rect key="frame" x="20" y="88" width="128" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7g8-5g-0z3" secondAttribute="height" multiplier="1:1" id="9mo-XE-XuW"/>
+                                    <constraint firstAttribute="width" constant="128" id="Anc-7n-eQF"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="iPhone" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IGU-9v-rFf">
+                                <rect key="frame" x="169" y="88" width="225" height="26.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Detalles del artículo" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RQc-K6-KnY">
+                                <rect key="frame" x="20" y="249" width="152" height="19.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Zcv-s7-dlC">
+                                <rect key="frame" x="20" y="283.5" width="169" height="221"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="R8b-4I-sAI">
+                                        <rect key="frame" x="0.0" y="0.0" width="114.5" height="44"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vendedor:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qSx-Km-zop">
+                                                <rect key="frame" x="0.0" y="0.0" width="80.5" height="19.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vendedor Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXW-H3-1nu">
+                                                <rect key="frame" x="0.0" y="24.5" width="114.5" height="19.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="3rI-7d-Zzf">
+                                        <rect key="frame" x="0.0" y="59" width="141.5" height="44"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tipo de envío:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2D-1T-rs1">
+                                                <rect key="frame" x="0.0" y="0.0" width="108" height="19.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tipo de envio Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oyC-46-uOQ">
+                                                <rect key="frame" x="0.0" y="24.5" width="141.5" height="19.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="WBU-Br-DjN">
+                                        <rect key="frame" x="0.0" y="118" width="169" height="44"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Items disponibles:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LQZ-xh-6Nm">
+                                                <rect key="frame" x="0.0" y="0.0" width="142.5" height="19.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Items disponibles value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TI9-gr-lqo">
+                                                <rect key="frame" x="0.0" y="24.5" width="169" height="19.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Kpw-h7-qQe">
+                                        <rect key="frame" x="0.0" y="177" width="88" height="44"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Precio:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jq6-W5-dih">
+                                                <rect key="frame" x="0.0" y="0.0" width="54.5" height="19.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Precio value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xkl-00-hSl">
+                                                <rect key="frame" x="0.0" y="24.5" width="88" height="19.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hlh-2f-jb1">
+                                <rect key="frame" x="147.5" y="514.5" width="119" height="30"/>
+                                <state key="normal" title="Agregar al carrito"/>
+                                <connections>
+                                    <action selector="didPressAddToCart:" destination="pD6-sC-CAt" eventType="touchUpInside" id="BZm-bW-Az3"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="bDP-Uo-Lkw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IGU-9v-rFf" firstAttribute="top" secondItem="7g8-5g-0z3" secondAttribute="top" id="59U-KX-lJG"/>
+                            <constraint firstItem="Zcv-s7-dlC" firstAttribute="top" secondItem="RQc-K6-KnY" secondAttribute="bottom" constant="15" id="6VJ-g1-Yci"/>
+                            <constraint firstItem="7g8-5g-0z3" firstAttribute="top" secondItem="bDP-Uo-Lkw" secondAttribute="top" constant="44" id="9fx-AS-QKt"/>
+                            <constraint firstItem="7g8-5g-0z3" firstAttribute="leading" secondItem="bDP-Uo-Lkw" secondAttribute="leading" constant="20" id="9lI-Jk-h4R"/>
+                            <constraint firstItem="RQc-K6-KnY" firstAttribute="leading" secondItem="7g8-5g-0z3" secondAttribute="leading" id="C44-vX-Q9K"/>
+                            <constraint firstItem="Hlh-2f-jb1" firstAttribute="centerX" secondItem="AWE-uA-sn3" secondAttribute="centerX" id="Rtc-7n-pN6"/>
+                            <constraint firstItem="RQc-K6-KnY" firstAttribute="top" secondItem="7g8-5g-0z3" secondAttribute="bottom" constant="33" id="S9J-lj-1ay"/>
+                            <constraint firstItem="Hlh-2f-jb1" firstAttribute="top" secondItem="Zcv-s7-dlC" secondAttribute="bottom" constant="10" id="dxT-fi-wIs"/>
+                            <constraint firstItem="Zcv-s7-dlC" firstAttribute="leading" secondItem="RQc-K6-KnY" secondAttribute="leading" id="sHL-St-QgQ"/>
+                            <constraint firstItem="IGU-9v-rFf" firstAttribute="leading" secondItem="7g8-5g-0z3" secondAttribute="trailing" constant="21" id="t1y-IA-94L"/>
+                            <constraint firstItem="bDP-Uo-Lkw" firstAttribute="trailing" secondItem="IGU-9v-rFf" secondAttribute="trailing" constant="20" id="yTh-SP-9l9"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="itemIconImageView" destination="7g8-5g-0z3" id="Krh-PR-9tT"/>
+                        <outlet property="itemPriceLabel" destination="Xkl-00-hSl" id="u8u-O1-nN0"/>
+                        <outlet property="itemQuantityLabel" destination="TI9-gr-lqo" id="g8K-XZ-UsE"/>
+                        <outlet property="itemSellerLabel" destination="lXW-H3-1nu" id="0j3-gP-skQ"/>
+                        <outlet property="itemShippingLabel" destination="oyC-46-uOQ" id="qL1-FE-fmV"/>
+                        <outlet property="itemTitleLabel" destination="IGU-9v-rFf" id="ZC5-Yd-suC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zrk-ja-WbF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4" y="182"/>
+            <point key="canvasLocation" x="-4.3478260869565224" y="181.47321428571428"/>
         </scene>
     </scenes>
     <resources>
