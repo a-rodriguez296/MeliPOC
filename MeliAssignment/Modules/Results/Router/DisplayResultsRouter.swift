@@ -30,8 +30,10 @@ class DisplayResultsRouter: DisplayResultsWireframeLogic {
     }
 
     func goToDetailView() {
-        if let selectedItem = dataStore?.selectedResult {
-            
+        if let selectedItem = dataStore?.selectedResult,
+           let navVC = viewController?.navigationController {
+            let vc = DetailRouter.assembleModule(with: selectedItem)
+            navVC.pushViewController(vc, animated: true)
         }
     }
 }

@@ -31,6 +31,11 @@
 		5FA445A7268D5CEC002E7A16 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA445A6268D5CEC002E7A16 /* UIView+Extension.swift */; };
 		5FA445AB268D5D60002E7A16 /* ResultViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA445A9268D5D60002E7A16 /* ResultViewCell.swift */; };
 		5FA445AC268D5D60002E7A16 /* ResultViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FA445AA268D5D60002E7A16 /* ResultViewCell.xib */; };
+		5FBCD5D8268EAB35006208B7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBCD5D7268EAB35006208B7 /* DetailViewController.swift */; };
+		5FBCD5DB268EAB53006208B7 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FBCD5DA268EAB53006208B7 /* Detail.storyboard */; };
+		5FBCD5DE268EABA8006208B7 /* DetailContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBCD5DD268EABA8006208B7 /* DetailContract.swift */; };
+		5FBCD5E1268EABD9006208B7 /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBCD5E0268EABD9006208B7 /* DetailRouter.swift */; };
+		5FBCD5EE268EAE1D006208B7 /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBCD5ED268EAE1D006208B7 /* DetailInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +65,11 @@
 		5FA445A6268D5CEC002E7A16 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		5FA445A9268D5D60002E7A16 /* ResultViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewCell.swift; sourceTree = "<group>"; };
 		5FA445AA268D5D60002E7A16 /* ResultViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultViewCell.xib; sourceTree = "<group>"; };
+		5FBCD5D7268EAB35006208B7 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		5FBCD5DA268EAB53006208B7 /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
+		5FBCD5DD268EABA8006208B7 /* DetailContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailContract.swift; sourceTree = "<group>"; };
+		5FBCD5E0268EABD9006208B7 /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
+		5FBCD5ED268EAE1D006208B7 /* DetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +241,50 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		5FBCD5E4268EAD7C006208B7 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				5FBCD5EB268EADC3006208B7 /* Contract */,
+				5FBCD5F0268EAE47006208B7 /* Interactor */,
+				5FBCD5E7268EADAA006208B7 /* View */,
+				5FBCD5E9268EADB3006208B7 /* Router */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		5FBCD5E7268EADAA006208B7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5FBCD5DA268EAB53006208B7 /* Detail.storyboard */,
+				5FBCD5D7268EAB35006208B7 /* DetailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5FBCD5E9268EADB3006208B7 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				5FBCD5E0268EABD9006208B7 /* DetailRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		5FBCD5EB268EADC3006208B7 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				5FBCD5DD268EABA8006208B7 /* DetailContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		5FBCD5F0268EAE47006208B7 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				5FBCD5ED268EAE1D006208B7 /* DetailInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 		5FEA7D5B268C091200DDAC1D /* Main VC */ = {
 			isa = PBXGroup;
 			children = (
@@ -245,6 +299,7 @@
 			children = (
 				5FEA7D5B268C091200DDAC1D /* Main VC */,
 				5FA32EFA268C0CB20040A5D8 /* Results */,
+				5FBCD5E4268EAD7C006208B7 /* Detail */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -311,6 +366,7 @@
 				5F5793F2268AB57D00D09776 /* LaunchScreen.storyboard in Resources */,
 				5F5793EF268AB57D00D09776 /* Assets.xcassets in Resources */,
 				5F5793ED268AB57B00D09776 /* Main.storyboard in Resources */,
+				5FBCD5DB268EAB53006208B7 /* Detail.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,12 +378,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F579400268AB5F300D09776 /* Constants.swift in Sources */,
+				5FBCD5E1268EABD9006208B7 /* DetailRouter.swift in Sources */,
 				5F579408268AB68500D09776 /* Endpoints+SearchItems.swift in Sources */,
 				5FA32EFF268C0EA90040A5D8 /* Storyboard+Extension.swift in Sources */,
 				5FA32F13268C14D20040A5D8 /* ResultDAO.swift in Sources */,
 				5FA445AB268D5D60002E7A16 /* ResultViewCell.swift in Sources */,
 				5F5793EA268AB57B00D09776 /* ViewController.swift in Sources */,
+				5FBCD5DE268EABA8006208B7 /* DetailContract.swift in Sources */,
 				5F57940E268AB72300D09776 /* SearchItemsResponse.swift in Sources */,
+				5FBCD5D8268EAB35006208B7 /* DetailViewController.swift in Sources */,
 				5FA32EF1268C0C390040A5D8 /* DisplayResultsViewController.swift in Sources */,
 				5F5793E6268AB57B00D09776 /* AppDelegate.swift in Sources */,
 				5F5793E8268AB57B00D09776 /* SceneDelegate.swift in Sources */,
@@ -337,6 +396,7 @@
 				5FA445A7268D5CEC002E7A16 /* UIView+Extension.swift in Sources */,
 				5FA32EEE268C0C0C0040A5D8 /* DisplayResultsRouter.swift in Sources */,
 				5F5793FB268AB5B500D09776 /* ApiClient.swift in Sources */,
+				5FBCD5EE268EAE1D006208B7 /* DetailInteractor.swift in Sources */,
 				5FA32F0B268C10300040A5D8 /* DisplayResultsPresenter.swift in Sources */,
 				5FA32F08268C0FFA0040A5D8 /* DisplayResultsInteractor.swift in Sources */,
 				5FA445A4268D5C7A002E7A16 /* TableView+Extension.swift in Sources */,
