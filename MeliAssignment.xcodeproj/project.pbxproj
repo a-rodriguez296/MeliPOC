@@ -36,6 +36,7 @@
 		5FBCD5DE268EABA8006208B7 /* DetailContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBCD5DD268EABA8006208B7 /* DetailContract.swift */; };
 		5FBCD5E1268EABD9006208B7 /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBCD5E0268EABD9006208B7 /* DetailRouter.swift */; };
 		5FBCD5EE268EAE1D006208B7 /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBCD5ED268EAE1D006208B7 /* DetailInteractor.swift */; };
+		5FBCD5F3268EAF43006208B7 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBCD5F2268EAF43006208B7 /* DetailPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		5FBCD5DD268EABA8006208B7 /* DetailContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailContract.swift; sourceTree = "<group>"; };
 		5FBCD5E0268EABD9006208B7 /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
 		5FBCD5ED268EAE1D006208B7 /* DetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
+		5FBCD5F2268EAF43006208B7 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +248,7 @@
 			children = (
 				5FBCD5EB268EADC3006208B7 /* Contract */,
 				5FBCD5F0268EAE47006208B7 /* Interactor */,
+				5FBCD5F5268EAF5D006208B7 /* Presenter */,
 				5FBCD5E7268EADAA006208B7 /* View */,
 				5FBCD5E9268EADB3006208B7 /* Router */,
 			);
@@ -283,6 +286,14 @@
 				5FBCD5ED268EAE1D006208B7 /* DetailInteractor.swift */,
 			);
 			path = Interactor;
+			sourceTree = "<group>";
+		};
+		5FBCD5F5268EAF5D006208B7 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5FBCD5F2268EAF43006208B7 /* DetailPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		5FEA7D5B268C091200DDAC1D /* Main VC */ = {
@@ -388,6 +399,7 @@
 				5F57940E268AB72300D09776 /* SearchItemsResponse.swift in Sources */,
 				5FBCD5D8268EAB35006208B7 /* DetailViewController.swift in Sources */,
 				5FA32EF1268C0C390040A5D8 /* DisplayResultsViewController.swift in Sources */,
+				5FBCD5F3268EAF43006208B7 /* DetailPresenter.swift in Sources */,
 				5F5793E6268AB57B00D09776 /* AppDelegate.swift in Sources */,
 				5F5793E8268AB57B00D09776 /* SceneDelegate.swift in Sources */,
 				5F579405268AB62B00D09776 /* Endpoints.swift in Sources */,

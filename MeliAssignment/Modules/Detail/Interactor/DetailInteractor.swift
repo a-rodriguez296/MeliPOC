@@ -9,8 +9,11 @@ import Foundation
 
 class DetailInteractor: DetailBusinessLogic {
     var selectedItem: ResultDAO?
+    var presenter: DetailPresentationLogic?
 
     func getSelectedItem() {
-
+        if let selectedItem = selectedItem {
+            presenter?.presentSelectedItem(item: selectedItem)
+        }
     }
 }
