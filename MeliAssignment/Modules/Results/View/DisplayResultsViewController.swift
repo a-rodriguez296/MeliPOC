@@ -10,7 +10,7 @@ import UIKit
 class DisplayResultsViewController: UIViewController, DisplayResultsDisplayLogic {
 
     var interactor: DisplayResultsBusinessLogic?
-    weak var router: DisplayResultsWireframeLogic?
+    var router: DisplayResultsWireframeLogic?
     var results: [ResultViewModel]?
 
     @IBOutlet weak var tableView: UITableView!
@@ -53,6 +53,13 @@ extension DisplayResultsViewController: UITableViewDelegate, UITableViewDataSour
             cell.configureWith(viewModel: viewModel)
         }
         return cell
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let selectedResult = results?[indexPath.row] {
+            interactor?.selectedResult(with: selectedResult.id)
+            router?.goToDetailView()
+        }
     }
 }
 

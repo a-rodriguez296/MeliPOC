@@ -9,6 +9,7 @@ import Foundation
 
 protocol DisplayResultsBusinessLogic: class {
     func fetchResults(with keyword: String)
+    func selectedResult(with id: String)
 }
 
 protocol DisplayResultsPresentationLogic: class {
@@ -17,7 +18,13 @@ protocol DisplayResultsPresentationLogic: class {
 
 protocol DisplayResultsDisplayLogic: class {
     func displayResults(with array: [ResultViewModel])
-    
 }
 
-protocol DisplayResultsWireframeLogic: class {}
+protocol DisplayResultsDataStore {
+    var selectedResult: ResultDAO? { get set }
+}
+
+
+protocol DisplayResultsWireframeLogic: class {
+    func goToDetailView()
+}

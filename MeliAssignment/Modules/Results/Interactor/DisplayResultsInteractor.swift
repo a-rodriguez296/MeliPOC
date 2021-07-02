@@ -7,10 +7,10 @@
 
 import Foundation
 
-class DisplayResultsInteractor: DisplayResultsBusinessLogic {
+class DisplayResultsInteractor: DisplayResultsBusinessLogic, DisplayResultsDataStore {
 
     var presenter: DisplayResultsPresentationLogic?
-    var selectedItem: ResultDAO?
+    var selectedResult: ResultDAO?
     var results: [ResultDAO]?
     var timer: Timer?
     var countdown = 1.5
@@ -50,5 +50,9 @@ class DisplayResultsInteractor: DisplayResultsBusinessLogic {
                 break
             }
         }
+    }
+
+    func selectedResult(with id: String) {
+        selectedResult = results?.first(where: { $0.id == id })
     }
 }

@@ -11,6 +11,7 @@ import UIKit
 class DisplayResultsRouter: DisplayResultsWireframeLogic {
 
     weak var viewController: UIViewController?
+    var dataStore: DisplayResultsDataStore?
 
     static func assembleModule() -> UIViewController {
         let viewController: DisplayResultsViewController = UIStoryboard(name: "DisplayResults", bundle: nil).instantiateViewController()
@@ -21,9 +22,16 @@ class DisplayResultsRouter: DisplayResultsWireframeLogic {
         presenter.viewController = viewController
 
         let router = DisplayResultsRouter()
+        router.dataStore = interactor
         router.viewController = viewController
         viewController.router = router
         viewController.interactor = interactor
         return viewController
+    }
+
+    func goToDetailView() {
+        if let selectedItem = dataStore?.selectedResult {
+            
+        }
     }
 }
